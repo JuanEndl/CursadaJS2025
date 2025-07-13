@@ -5,7 +5,34 @@
   box-sizing: border-box;
 }
 
+/*Scroll*/
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*Empieza boton Whatsap*/
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.whatsapp-icon img {
+  width: 60px;
+  height: 60px;
+}
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+/*Termina boton Whatsap*/
 
 /*Estilo de letra en toda la web*/
 
@@ -41,7 +68,7 @@ header {
   font-size: 3.5rem;
   font-weight: 700;
   color: #161616;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .subtitulo {
@@ -81,7 +108,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px 60px 20px; /* Aumenta el padding inferior */
+  padding: 150px 20px 100px 20px; /* Aumenta el padding inferior */
 }
 
 .contenido-quienes {
@@ -93,7 +120,7 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   color: #161616;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .descripcion {
@@ -166,14 +193,25 @@ header {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #161616;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .lista-productos {
+  margin-top: 100px;
   list-style: none;
   padding: 0;
   text-align: left;
   display: inline-block;
+}
+
+.producto-item {
+  color: #161616;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.producto-item:hover {
+  color: #007bff;
 }
 
 .producto-item {
@@ -213,7 +251,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  top: 30px;
+  top: -20px;
 }
 .galeriaS3 img {
   border-radius: 12px;
@@ -235,14 +273,14 @@ footer {
 }
 
 /* Grid con 4 secciones iguales */
-.container {
+.containerS1 {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   height: 100vh; /* usa toda la pantalla */
 }
 
 /* Estilo general para todas las secciones */
-.container > div {
+.containerS1 > div {
   width: 100%;
   display: flex;
   align-items: center;
@@ -273,7 +311,7 @@ footer {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 .campo-formulario {
@@ -330,7 +368,7 @@ footer {
 }
 
 .boton-enviar:hover {
-  background-color: #e6c10f;
+  background-color: #978421;
 }
 
 /*Termina Formulario*/
